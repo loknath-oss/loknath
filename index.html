@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryabhatta Coaching Institute</title>
+  <link rel="shortcut icon" href="A.jpg">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #682828;
+      color: #fff;
+      line-height: 1.6;
+      scroll-behavior: smooth;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 20px 10%;
+      background: #351313;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+    }
+
+    header h1 {
+      font-size: 24px;
+      color: #f4b400;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+    }
+
+    nav ul li {
+      margin: 0 15px;
+    }
+
+    nav ul li a {
+      text-decoration: none;
+      color: #fff;
+      font-weight: bold;
+      transition: 0.3s;
+    }
+
+    nav ul li a:hover {
+      color: #f4b400;
+    }
+
+    section {
+      min-height: 100vh;
+      padding: 100px 10% 50px;
+    }
+
+    #home {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 30px;
+    }
+
+    #home img {
+      width: 500px;
+      border-radius: 10px;
+    }
+
+    #home .text {
+      max-width: 500px;
+    }
+
+    #home h2 {
+      font-size: 36px;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      display: inline-block;
+      padding: 10px 20px;
+      border-radius: 5px;
+      margin-right: 10px;
+      text-decoration: none;
+      transition: 0.3s;
+    }
+
+    .btn-primary {
+      background: #f4b400;
+      color: #000;
+    }
+
+    .btn-primary:hover {
+      background: #e09e00;
+    }
+
+    .btn-secondary {
+      border: 2px solid #fff;
+      color: #fff;
+    }
+
+    .btn-secondary:hover {
+      background: #fff;
+      color: #000;
+    }
+
+    #menu, #about, #testimonials, #gallery, #contact {
+      background: #4a2424;
+      margin-top: 20px;
+      border-radius: 10px;
+      padding: 40px;
+      justify-content: space-between;
+      align-items: center;
+    
+    }
+
+    #menu h2, #about h2, #testimonials h2, #gallery h2, #contact h2 {
+      margin-bottom: 20px;
+      color: #f4b400;
+    }
+
+    .menu-items {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .menu-item {
+      background: #2a1313;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    .menu-item img {
+      width: 100%;
+      border-radius: 10px;
+    }
+
+    .menu-item h3 {
+      margin: 10px 0;
+    }
+
+    footer {
+      background: #2a1313;
+      text-align: center;
+      padding: 20px;
+      margin-top: 20px;
+    }
+
+    /* About Section (2 column layout) */
+    #about .about-container {
+      display: flex;
+      align-items: flex-start;
+      gap: 40px;
+    }
+
+    #about .about-text {
+      flex: 1;
+      animation: slideInLeft 1.2s ease-out;
+    }
+
+    #about .about-img {
+      flex: 1;
+      text-align: center;
+      animation: slideInRight 1.2s ease-out;
+    }
+
+    #about .about-img img {
+      max-width: 100%;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+
+    /* Animation Keyframes */
+    @keyframes slideInLeft {
+      0% {
+        opacity: 10;
+        transform: translateX(-2000px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+
+    @keyframes slideInRight {
+      0% {
+        opacity: 10;
+        transform: translateX(2000px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateX(0);
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>📖 AC.INSTITUTE</h1>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#testimonials">Testimonials</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Home Section -->
+  <section id="home">
+    <div class="text">
+      <h2>Best INSTITUTE</h2>
+      <p>Make your Carrier with our special Teachers!<br>
+      Welcome to our institute, where every Teacher help you with their best.</p>
+      <a href="#menu" class="btn btn-primary">Book Now</a>
+      <a href="#contact" class="btn btn-secondary">Contact Us</a>
+    </div>
+    <img src="10.png" alt="Institute">
+  </section>
+
+  <!-- About -->
+  <section id="about">
+    <h2>About Us</h2>
+    <div class="about-container">
+      <div class="about-text">
+        <p>
+          🏫 About Us – Aryabhatta Coaching Institute<br><br>
+          📘 Specialized coaching for Class 11, Class 12, and B.Sc.<br><br>
+          👩‍🏫 Experienced faculty with proven expertise<br><br>
+          📝 Concept clarity with exam-oriented preparation<br><br>
+          📈 Regular tests, assignments, and feedback<br><br>
+          🎯 Focused batches for personal attention<br><br>
+          🌟 Building strong foundations for a brighter future
+        </p>
+      </div>
+      <div class="about-img">
+        <img src="0f.png" height="450px" width="550px" alt="About Institute">
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu -->
+  <section id="menu">
+    <h2>Our Courses</h2>
+    <div class="menu-items">
+      <div class="menu-item">
+        <img src="chemi.jpg" alt="Chemistry">
+        <h3>CHEMISTRY FOR 11TH</h3>
+        <p style="background-color: green;">₹499</p><br>
+        <img src="11ch.png" alt="Chemistry 12">
+        <h3>CHEMISTRY FOR 12TH</h3>
+        <p style="background-color: green;">₹499</p>
+      </div>
+      <div class="menu-item">
+        <img src="11c.png" alt="Physics">
+        <h3>PHYSICS FOR 11TH</h3>
+        <p style="background-color: green;">₹499</p><br>
+        <img src="phyi.jpg" alt="Physics 12">
+        <h3>PHYSICS FOR 12TH</h3>
+        <p style="background-color: green">₹499</p>
+      </div>
+      <div class="menu-item">
+        <img src="11mt.png" alt="Maths">
+        <h3>MATHS FOR CLASS 11TH</h3>
+        <p style="background-color: green;">₹499 </p><br>
+        <img src="12mt.png" alt="Maths 12">
+        <h3>MATHS FOR CLASS 12</h3>
+        <p style="background-color: green;">₹499 </p>
+      </div>
+      <div class="menu-item">
+        <img src="eg.jpg" alt="English">
+        <h3>ENGLISH FOR 11TH</h3>
+        <p style="background-color: green;">₹499</p><br>
+        <img src="E.jpg" alt="English 12">
+        <h3>ENGLISH FOR 12TH</h3>
+        <p style="background-color: green">₹499</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials">
+    <h2>Testimonials</h2>
+    <p>"Best Institute with experienced teachers!" – Rahul</p>
+    <p>"Amazing teaching methods and great guidance." – Priya</p>
+    <p>Aryabhatta Coaching Institute has changed the way I study.
+
+"Teachers here explain every concept in such a simple way".<br>
+
+"The doubt sessions are very helpful and detailed.<br>
+
+"I love the discipline and motivation we get here.<br>
+
+"The environment is very student-friendly and focused.<br>
+
+"Every subject is taught with full dedication and clarity.<br>
+
+I improved a lot in Physics and Maths after joining."- bubun<br>
+
+Notes provided are concise and exam-oriented."-alok<br>
+
+"Regular tests helped me track my progress better.-samir<br>
+
+"The faculty members are highly experienced and approachable."-sema<br>
+
+"I never thought learning could be this enjoyable."-karan<br>
+
+"The batch sizes are small, so we get individual attention."-shushree<br>
+
+"Aryabhatta Institute boosted my confidence level."-payal<br>
+
+"I cleared my board exams with flying colors because of them."-puja<br>
+
+"They focus on concept clarity, not just rote learning."-anu<br>
+
+"The teachers really care about our academic growth."-pratush<br>
+
+"The best part is how doubts are solved on the spot."-suraj<br>
+
+"They make even tough chapters feel easy."-hena<br>
+
+"Truly the best coaching for Class 11 & 12 in the city."-Shreta<br>
+
+"I’ll always recommend Aryabhatta to all my juniors."-sagar</p>
+  </section>
+
+  <!-- Gallery -->
+  <section id="gallery">
+    <h2>Gallery</h2>
+    <img src="ay1.jpg" width="300px">
+    
+    <img src="ay2.jpg" width="300px">
+    <img src="ay4.jpg" width="300px"><br>
+    <img src="ay5.jpg" width="300px" height="300px">
+    <img src="ay6.jpg" width="300px" height="300px">
+    <img src="ay7.jpg" width="300px" height="300px">
+
+    
+  </section>
+
+  <!-- Contact -->
+  <section id="contact">
+    <h2>Contact Us</h2>
+    <p>Email: Aryabhatta07@edu.com</p>
+    <p>Phone: +91 6203840217</p>
+    <p><a href="https://wa.me/+916203840217" style="color:#f4b400;">Chat on WhatsApp</a></p>
+    <p><a href="https://maps.app.goo.gl/5Y2TSfMo1mca1nSJ6" style="color:#f4b400;">📍LOCATION</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 ARYABHATTA COACHING INSTITUTE | All Rights Reserved | CREATED BY - LOKNATH MANDAL</p>
+  </footer>
+</body>
+</html>
